@@ -184,3 +184,9 @@ a {
 a:hover, a:focus, a:active {
   color: #4EA97D;
 }
+
+.footer {
+ background-color: #DFE3E6;
+ color: #868e96;
+ padding: 5px;
+}
