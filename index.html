@@ -27,7 +27,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Katie Dodd</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/src/assets/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
           <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+          <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target="#exampleModal">Contact</a>
         </li>
       </ul>
     </div>
@@ -193,9 +193,6 @@
             Cross Browser Testing &amp; Debugging</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
             Agile Development &amp; Scrum</li>
         </ul>
       </div>
@@ -227,6 +224,49 @@
       </div>
     </section>
 
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Let's build something together!</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form name="contact" method="POST" data-netlify="true" action="success.html" id="contact-form">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" name="Email" class="form-control" id="contact-email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input name="Name" type="text" class="form-control" id="contact-text">
+            </div>
+            <div class="form-group">
+              <label for="Company">Company</label>
+              <input name="Company" type="text" class="form-control" id="contact-text">
+            </div>
+            <div class="form-group">
+              <label for="example-tel-input">Phone</label>
+              <input class="form-control" name="Phone" type="tel" placeholder="(555)-555-5555" id="example-tel-input">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Questions/Comments</label>
+              <textarea name="Questions/Comments" type="text" class="form-control" id="contact-text" rows="3"></textarea>
+            </div>
+            <button type="submit" id="contact-submit" class="btn btn-primary mb-2">Submit</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <footer class="footer text-center">
       &copy;  Katie Dodd
     </footer>
@@ -234,6 +274,7 @@
     <hr class="m-0">
 
   </div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

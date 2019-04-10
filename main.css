@@ -190,3 +190,23 @@ a:hover, a:focus, a:active {
  color: #868e96;
  padding: 5px;
 }
+
+#contact_header {
+  color: #194543;
+}
+
+#contact-submit {
+  background-color: #194543;
+}
+
+#contact-submit:hover {
+  background-color: #007A70;
+}
+
+#contact_back_link a {
+  color: #194543 !important;
+}
+
+#contact_back_link a:hover {
+  color: #007A70 !important;
+}
